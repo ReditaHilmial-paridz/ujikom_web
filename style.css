@@ -31,6 +31,7 @@ footer {
   text-align: center;
   color: white;
 }
+#more {display: none;}
 
  @keyframes scale-in-center {
     0% {

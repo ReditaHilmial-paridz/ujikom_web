@@ -109,9 +109,29 @@
                 <div class="card-body">
                     <h5 class="card-title">Sambutan Kepala Sekolah</h5>
                     <p class="card-text">Assalamu'alaikum Wr, Wb <br>
-                        Segala puji dan syukur kehadirat Allah SWT, semoga kita semua dalam lindungan-Nya. dan atas ijin beliau kami dapat menyajikan website SMK Negeri 4 Tasikmalaya ini.
+                        Segala puji dan syukur kehadirat Allah SWT, semoga kita semua dalam lindungan-Nya. dan atas ijin beliau kami dapat menyajikan website SMK Negeri 4 Tasikmalaya ini.<span id="dots">...</span><span id="more">
                         Kami berharap dengan adanya web site di SMK Negeri 4 Tasikmalaya ini para pengunjung dapat mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi antara sekolah dengan masyarakat demi kemajuan kita bersama <br>
-                        Wassalamu’alaikum Wr, Wb</p>
+                        Wassalamu’alaikum Wr, Wb</span>
+                        <a onclick="myFunction()" href="#" class="card-link" id="myBtn">selengkapnya</a>
+                      </p>                       
+                        <script>
+                        function myFunction() {
+                          var dots = document.getElementById("dots");
+                          var moreText = document.getElementById("more");
+                          var btnText = document.getElementById("myBtn");
+
+                          if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "selengkapnya"; 
+                            moreText.style.display = "none";
+                          } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "tampilkan lebih sedikit"; 
+                            moreText.style.display = "inline";
+                          }
+                        }
+                        </script>
+
                     <p class="card-text"><small class="text-body-secondary">Kurniawan, S.pd., M.pd.</small></p>
                 </div>
             </div>
@@ -195,6 +215,22 @@
     </script>
     
     
+</div>
+<div class="row">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col order-last">
+        First in DOM, ordered last
+      </div>
+      <div class="col">
+        Second in DOM, unordered
+      </div>
+      <div class="col order-first">
+        <h3>jumlah guru</h3>
+        Third in DOM, ordered first
+      </div>
+    </div>
+  </div>
 </div>
 <div class="row">
     <div class="col-12 text-center mb-4">
